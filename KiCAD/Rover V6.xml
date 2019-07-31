@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/jzkmath/Documents/KiCAD/Rover V6/Rover V6.sch</source>
+    <date>Tue 23 Jul 2019 10:53:54 PM EDT</date>
+    <tool>Eeschema 5.1.2-f72e74a~84~ubuntu19.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Low Cost Rover V6</title>
+        <company>VT AMP Lab</company>
+        <rev>V6</rev>
+        <date>2019-07-18</date>
+        <source>Rover V6.sch</source>
+        <comment number="1" value="Original Design By: Will Gerhard"/>
+        <comment number="2" value="V6 By: Jonathan Kayne"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U5">
+      <value>74HC123D</value>
+      <footprint>rover:DIP16_labeled</footprint>
+      <fields>
+        <field name="Digikey PN">TC74HC123APNEWF-ND</field>
+        <field name="Unit Cost">$0.62</field>
+      </fields>
+      <libsource lib="rover" part="74HC123D" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D2D2442</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10uF</value>
+      <footprint>rover:C_Disc_D4.3mm_W1.9mm_P5.00mm_Handsolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey PN">445-8396-ND</field>
+        <field name="Unit Cost">$0.40</field>
+      </fields>
+      <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D2D367F</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>100k</value>
+      <footprint>rover:R_Combo</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey PN">CF18JT100KCT-ND</field>
+        <field name="Unit Cost">$0.10</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D2D3CE7</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>RGB_LED</value>
+      <footprint>rover:LED_D5.0mm_handsolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Amazon PN">B01C19ENG4</field>
+        <field name="Unit Cost">$0.0698</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D2D3F55</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>L293D</value>
+      <footprint>rover:DIP16_labeled</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/l293.pdf</datasheet>
+      <fields>
+        <field name="Digikey PN">497-2936-5-ND</field>
+        <field name="Unit Cost">$3.91</field>
+      </fields>
+      <libsource lib="Driver_Motor" part="L293D" description="Quadruple Half-H Drivers"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D322C61</tstamp>
+    </comp>
+    <comp ref="M1">
+      <value>DC_Motor</value>
+      <footprint>rover:Motor</footprint>
+      <fields>
+        <field name="Amazon PN">B07DQGX369</field>
+        <field name="Unit Cost">$3.75</field>
+      </fields>
+      <libsource lib="rover" part="DC_Motor" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D32FB0F</tstamp>
+    </comp>
+    <comp ref="M2">
+      <value>DC_Motor</value>
+      <footprint>rover:Motor_Mirror_true</footprint>
+      <fields>
+        <field name="Amazon PN">B07DQGX369</field>
+        <field name="Unit Cost">$3.75</field>
+      </fields>
+      <libsource lib="rover" part="DC_Motor" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D330149</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>S-80836CNY-B2-U</value>
+      <footprint>Package_TO_SOT_THT:TO-92_HandSolder</footprint>
+      <fields>
+        <field name="Digikey PN">1662-1815-ND</field>
+        <field name="Unit Cost">$0.80</field>
+      </fields>
+      <libsource lib="rover" part="S-80836CNY-B2-U" description="Voltage Detector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D424049</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>rover:LED_D5.0mm_handsolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey PN">C5SMF-RJF-CT0W0BB1-ND</field>
+        <field name="Unit Cost">$0.14</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D42FDAC</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>1k</value>
+      <footprint>rover:R_Combo</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey PN">CF18JT1K00CT-ND</field>
+        <field name="Unit Cost">$0.10</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D4307AE</tstamp>
+    </comp>
+    <comp ref="BT1">
+      <value>Battery</value>
+      <footprint>rover:54x2</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey PN">36-54-ND</field>
+        <field name="Unit Cost">$1.04</field>
+      </fields>
+      <libsource lib="Device" part="Battery" description="Multiple-cell battery"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D374860</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_2.0x2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D37B774</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_2.0x2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D3CFCBB</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_2.0x2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D3D01AB</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>MPU-6050</value>
+      <footprint>rover:PinSocket_1x08_P2.54mm_Vertical_Zigzag</footprint>
+      <fields>
+        <field name="Amazon PN">B00LP25V1A</field>
+        <field name="Unit Cost">$3.00</field>
+      </fields>
+      <libsource lib="rover" part="MPU-6050" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D3F804E</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D624CD3</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D625A4A</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D625F1B</tstamp>
+    </comp>
+    <comp ref="H5">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D62631B</tstamp>
+    </comp>
+    <comp ref="H6">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D6271CD</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D62763B</tstamp>
+    </comp>
+    <comp ref="H8">
+      <value>MountingHole_Castor</value>
+      <footprint>rover:Ball_Caster</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D64618E</tstamp>
+    </comp>
+    <comp ref="H9">
+      <value>MountingHole_Castor</value>
+      <footprint>rover:Castor_Wheel</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D647223</tstamp>
+    </comp>
+    <comp ref="G1">
+      <value>Logo</value>
+      <footprint>rover:bolt</footprint>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="rover" part="Logo" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D64D8FB</tstamp>
+    </comp>
+    <comp ref="G2">
+      <value>Logo</value>
+      <footprint>rover:bolt</footprint>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="rover" part="Logo" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D64E146</tstamp>
+    </comp>
+    <comp ref="G3">
+      <value>Logo</value>
+      <footprint>rover:bumper</footprint>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="rover" part="Logo" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D64E2F8</tstamp>
+    </comp>
+    <comp ref="G4">
+      <value>Logo</value>
+      <footprint>rover:flame</footprint>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="rover" part="Logo" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D64E4CD</tstamp>
+    </comp>
+    <comp ref="G5">
+      <value>Logo</value>
+      <footprint>rover:flame</footprint>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="rover" part="Logo" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D64E65E</tstamp>
+    </comp>
+    <comp ref="G6">
+      <value>Logo</value>
+      <footprint>rover:flame_tiny</footprint>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="rover" part="Logo" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D64E80A</tstamp>
+    </comp>
+    <comp ref="G7">
+      <value>Logo</value>
+      <footprint>rover:LOGO2</footprint>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="rover" part="Logo" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D64E991</tstamp>
+    </comp>
+    <comp ref="H7">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D2ED6FA</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>TP4056_Charger</value>
+      <footprint>rover:TP4056_Module</footprint>
+      <fields>
+        <field name="Amazon PN">B071RG4YWM</field>
+        <field name="Unit Cost">$0.939</field>
+      </fields>
+      <libsource lib="rover" part="TP4056_Charger" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D314734</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_DPDT_x2</value>
+      <footprint>rover:Switch-EG2207</footprint>
+      <fields>
+        <field name="Digikey PN">EG1940-ND</field>
+        <field name="Unit Cost">$0.84</field>
+      </fields>
+      <libsource lib="Switch" part="SW_DPDT_x2" description="Switch, dual pole double throw, separate symbols"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D384A24</tstamp>
+    </comp>
+    <comp ref="A1">
+      <value>Arduino_Nano_v3.x</value>
+      <footprint>rover:Arduino_Nano_Handsolder</footprint>
+      <datasheet>http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf</datasheet>
+      <fields>
+        <field name="Amazon PN">B01MSYWE6B</field>
+        <field name="Unit Cost">$3.50</field>
+      </fields>
+      <libsource lib="MCU_Module" part="Arduino_Nano_v3.x" description="Arduino Nano v3.x"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D3AE0A6</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>HC-05</value>
+      <footprint>rover:HC-05</footprint>
+      <fields>
+        <field name="Amazon PN">B00WGPKZ8Y</field>
+        <field name="Unit Cost">$5.00</field>
+      </fields>
+      <libsource lib="rover" part="HC-05" description="Arduino Bluetooth Module"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D3BDC70</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>2k</value>
+      <footprint>rover:R_Combo</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey PN">CF18JT2K00CT-ND</field>
+        <field name="Unit Cost">$0.10</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D3C2241</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>1k</value>
+      <footprint>rover:R_Combo</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey PN">CF18JT1K00CT-ND</field>
+        <field name="Unit Cost">$0.10</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D3C2DFF</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x15</value>
+      <footprint>rover:PinSocket_1x15_P2.54mm_Vertical_Handsolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x15" description="Generic connector, single row, 01x15, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D48440D</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x15</value>
+      <footprint>rover:PinSocket_1x15_P2.54mm_Vertical_Handsolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Unit Cost">$0.00</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x15" description="Generic connector, single row, 01x15, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D48756A</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x15">
+      <description>Generic connector, single row, 01x15, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x15</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Battery">
+      <description>Multiple-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP1">
+      <description>Polarized capacitor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_US">
+      <description>Resistor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_US</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Driver_Motor" part="L293">
+      <aliases>
+        <alias>L293D</alias>
+      </aliases>
+      <description>Quadruple Half-H Drivers</description>
+      <docs>http://www.ti.com/lit/ds/symlink/l293.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">L293</field>
+        <field name="Footprint">Package_DIP:DIP-16_W7.62mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EN1,2" type="input"/>
+        <pin num="2" name="1A" type="input"/>
+        <pin num="3" name="1Y" type="output"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="2Y" type="output"/>
+        <pin num="7" name="2A" type="input"/>
+        <pin num="8" name="VCC2" type="power_in"/>
+        <pin num="9" name="EN3,4" type="input"/>
+        <pin num="10" name="3A" type="input"/>
+        <pin num="11" name="3Y" type="output"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="GND" type="power_in"/>
+        <pin num="14" name="4Y" type="output"/>
+        <pin num="15" name="4A" type="input"/>
+        <pin num="16" name="VCC1" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_Module" part="Arduino_Nano_v3.x">
+      <aliases>
+        <alias>Arduino_Nano_v2.x</alias>
+      </aliases>
+      <description>Arduino Nano v3.x</description>
+      <docs>http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf</docs>
+      <footprints>
+        <fp>Arduino*Nano*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">A</field>
+        <field name="Value">Arduino_Nano_v3.x</field>
+        <field name="Footprint">Module:Arduino_Nano</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D1/TX" type="BiDi"/>
+        <pin num="2" name="D0/RX" type="BiDi"/>
+        <pin num="3" name="RESET" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="D2" type="BiDi"/>
+        <pin num="6" name="D3" type="BiDi"/>
+        <pin num="7" name="D4" type="BiDi"/>
+        <pin num="8" name="D5" type="BiDi"/>
+        <pin num="9" name="D6" type="BiDi"/>
+        <pin num="10" name="D7" type="BiDi"/>
+        <pin num="11" name="D8" type="BiDi"/>
+        <pin num="12" name="D9" type="BiDi"/>
+        <pin num="13" name="D10" type="BiDi"/>
+        <pin num="14" name="D11" type="BiDi"/>
+        <pin num="15" name="D12" type="BiDi"/>
+        <pin num="16" name="D13" type="BiDi"/>
+        <pin num="17" name="3V3" type="power_out"/>
+        <pin num="18" name="AREF" type="input"/>
+        <pin num="19" name="A0" type="BiDi"/>
+        <pin num="20" name="A1" type="BiDi"/>
+        <pin num="21" name="A2" type="BiDi"/>
+        <pin num="22" name="A3" type="BiDi"/>
+        <pin num="23" name="A4" type="BiDi"/>
+        <pin num="24" name="A5" type="BiDi"/>
+        <pin num="25" name="A6" type="BiDi"/>
+        <pin num="26" name="A7" type="BiDi"/>
+        <pin num="27" name="+5V" type="power_out"/>
+        <pin num="28" name="RESET" type="input"/>
+        <pin num="29" name="GND" type="power_in"/>
+        <pin num="30" name="VIN" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+      </fields>
+    </libpart>
+    <libpart lib="Switch" part="SW_DPDT_x2">
+      <description>Switch, dual pole double throw, separate symbols</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SW*DPDT*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_DPDT_x2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+        <pin num="4" name="A" type="passive"/>
+        <pin num="5" name="B" type="passive"/>
+        <pin num="6" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="rover" part="74HC123D">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74HC123D</field>
+        <field name="Footprint">SOIC127P600X175-16N</field>
+        <field name="Unit Cost">$0.62</field>
+        <field name="Digikey PN">TC74HC123APNEWF-ND</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1~A" type="input"/>
+        <pin num="2" name="1B" type="input"/>
+        <pin num="3" name="1~RD" type="input"/>
+        <pin num="4" name="1~Q" type="output"/>
+        <pin num="5" name="2Q" type="output"/>
+        <pin num="6" name="2CEXT" type="passive"/>
+        <pin num="7" name="2REXT/CEXT" type="passive"/>
+        <pin num="8" name="GND" type="passive"/>
+        <pin num="9" name="2~A" type="input"/>
+        <pin num="10" name="2B" type="input"/>
+        <pin num="11" name="2~RD" type="input"/>
+        <pin num="12" name="2~Q" type="output"/>
+        <pin num="13" name="1Q" type="output"/>
+        <pin num="14" name="1CEXT" type="passive"/>
+        <pin num="15" name="1REXT/CEXT" type="passive"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="rover" part="DC_Motor">
+      <footprints>
+        <fp>Pin_Headers:Pin_Header_Straight_1x02</fp>
+        <fp>Connect:bornier2</fp>
+        <fp>TerminalBlock*2pol</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">DC_Motor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="rover" part="HC-05">
+      <description>Arduino Bluetooth Module</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">HC-05</field>
+        <field name="Footprint">rover:HC-05</field>
+        <field name="Amazon PN">B07C1PXM44</field>
+        <field name="Unit Cost">$7.00</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EN" type="input"/>
+        <pin num="2" name="Vcc" type="input"/>
+        <pin num="3" name="GND" type="input"/>
+        <pin num="4" name="Tx" type="input"/>
+        <pin num="5" name="Rx" type="input"/>
+        <pin num="6" name="STATE" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="rover" part="Logo">
+      <fields>
+        <field name="Reference">G</field>
+        <field name="Value">Logo</field>
+      </fields>
+    </libpart>
+    <libpart lib="rover" part="MPU-6050">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MPU-6050</field>
+        <field name="Footprint">rover:PinSocket_1x08_P2.54mm_Vertical_Zigzag</field>
+        <field name="Amazon PN">B00LP25V1A</field>
+        <field name="Unit Cost">$3.00</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vcc" type="input"/>
+        <pin num="2" name="GND" type="input"/>
+        <pin num="3" name="SCL" type="input"/>
+        <pin num="4" name="SDA" type="input"/>
+        <pin num="5" name="XDA" type="input"/>
+        <pin num="6" name="XCL" type="input"/>
+        <pin num="7" name="ADO" type="input"/>
+        <pin num="8" name="INT" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="rover" part="S-80836CNY-B2-U">
+      <description>Voltage Detector</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">S-80836CNY-B2-U</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-92_HandSolder</field>
+        <field name="Digikey PN">1662-1815-ND</field>
+        <field name="Unit Cost">$0.80</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Output" type="input"/>
+        <pin num="2" name="Input" type="input"/>
+        <pin num="3" name="GND" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="rover" part="TP4056_Charger">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TP4056_Charger</field>
+        <field name="Footprint">rover:TP4056_Module</field>
+        <field name="Amazon PN">B071RG4YWM</field>
+        <field name="Unit Cost">$0.939</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN+" type="input"/>
+        <pin num="2" name="IN-" type="input"/>
+        <pin num="3" name="OUT+" type="input"/>
+        <pin num="4" name="BATT+" type="input"/>
+        <pin num="5" name="BATT-" type="input"/>
+        <pin num="6" name="OUT-" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Driver_Motor">
+      <uri>/usr/share/kicad/library/Driver_Motor.lib</uri>
+    </library>
+    <library logical="MCU_Module">
+      <uri>/usr/share/kicad/library/MCU_Module.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/usr/share/kicad/library/Mechanical.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/usr/share/kicad/library/Switch.lib</uri>
+    </library>
+    <library logical="rover">
+      <uri>/home/jzkmath/Documents/KiCAD/Rover V6/rover.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GPIO-9">
+      <node ref="J1" pin="12"/>
+      <node ref="U1" pin="7"/>
+      <node ref="A1" pin="12"/>
+    </net>
+    <net code="2" name="GPIO-A5">
+      <node ref="A1" pin="24"/>
+      <node ref="J2" pin="7"/>
+      <node ref="U6" pin="3"/>
+    </net>
+    <net code="3" name="GPIO-A6">
+      <node ref="J2" pin="6"/>
+      <node ref="A1" pin="25"/>
+    </net>
+    <net code="4" name="GPIO-A7">
+      <node ref="J2" pin="5"/>
+      <node ref="A1" pin="26"/>
+    </net>
+    <net code="5" name="GPIO-13">
+      <node ref="J2" pin="15"/>
+      <node ref="A1" pin="16"/>
+    </net>
+    <net code="6" name="GPIO-12">
+      <node ref="J1" pin="15"/>
+      <node ref="A1" pin="15"/>
+    </net>
+    <net code="7" name="GPIO-11">
+      <node ref="A1" pin="14"/>
+      <node ref="J1" pin="14"/>
+    </net>
+    <net code="8" name="GPIO-8">
+      <node ref="J1" pin="11"/>
+      <node ref="A1" pin="11"/>
+    </net>
+    <net code="9" name="GPIO-7">
+      <node ref="A1" pin="10"/>
+      <node ref="J1" pin="10"/>
+    </net>
+    <net code="10" name="GPIO-5">
+      <node ref="A1" pin="8"/>
+      <node ref="J1" pin="8"/>
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="11" name="GPIO-6">
+      <node ref="U1" pin="10"/>
+      <node ref="J1" pin="9"/>
+      <node ref="A1" pin="9"/>
+    </net>
+    <net code="12" name="GPIO-10">
+      <node ref="J1" pin="13"/>
+      <node ref="U1" pin="2"/>
+      <node ref="A1" pin="13"/>
+    </net>
+    <net code="13" name="GPIO-A4">
+      <node ref="U6" pin="4"/>
+      <node ref="A1" pin="23"/>
+      <node ref="J2" pin="8"/>
+    </net>
+    <net code="14" name="GPIO-4">
+      <node ref="A1" pin="7"/>
+      <node ref="J1" pin="7"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="15" name="GPIO-3">
+      <node ref="J1" pin="6"/>
+      <node ref="U3" pin="4"/>
+      <node ref="A1" pin="6"/>
+    </net>
+    <net code="16" name="HC-05_EN">
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="17" name="GPIO-AREF">
+      <node ref="J2" pin="13"/>
+      <node ref="A1" pin="18"/>
+    </net>
+    <net code="18" name="GPIO-A3">
+      <node ref="A1" pin="22"/>
+      <node ref="J2" pin="9"/>
+    </net>
+    <net code="19" name="GPIO-A2">
+      <node ref="J2" pin="10"/>
+      <node ref="A1" pin="21"/>
+    </net>
+    <net code="20" name="GPIO-A1">
+      <node ref="A1" pin="20"/>
+      <node ref="J2" pin="11"/>
+    </net>
+    <net code="21" name="GPIO-A0">
+      <node ref="J2" pin="12"/>
+      <node ref="A1" pin="19"/>
+    </net>
+    <net code="22" name="GPIO-1">
+      <node ref="J1" pin="1"/>
+      <node ref="A1" pin="1"/>
+    </net>
+    <net code="23" name="RESET">
+      <node ref="J1" pin="3"/>
+      <node ref="A1" pin="28"/>
+      <node ref="A1" pin="3"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="24" name="GND">
+      <node ref="U6" pin="2"/>
+      <node ref="U1" pin="4"/>
+      <node ref="J2" pin="2"/>
+      <node ref="U1" pin="5"/>
+      <node ref="A1" pin="4"/>
+      <node ref="U2" pin="6"/>
+      <node ref="D2" pin="1"/>
+      <node ref="U5" pin="11"/>
+      <node ref="U2" pin="2"/>
+      <node ref="U2" pin="5"/>
+      <node ref="U4" pin="3"/>
+      <node ref="U1" pin="13"/>
+      <node ref="U1" pin="12"/>
+      <node ref="U5" pin="8"/>
+      <node ref="U3" pin="3"/>
+      <node ref="BT1" pin="2"/>
+      <node ref="TP3" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="J1" pin="4"/>
+      <node ref="A1" pin="29"/>
+    </net>
+    <net code="25" name="GPIO-2">
+      <node ref="J1" pin="5"/>
+      <node ref="A1" pin="5"/>
+    </net>
+    <net code="26" name="+9V">
+      <node ref="A1" pin="30"/>
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="27" name="+5V">
+      <node ref="U3" pin="2"/>
+      <node ref="U5" pin="10"/>
+      <node ref="U5" pin="16"/>
+      <node ref="R3" pin="1"/>
+      <node ref="SW1" pin="3"/>
+      <node ref="U5" pin="9"/>
+      <node ref="U5" pin="2"/>
+      <node ref="U5" pin="3"/>
+      <node ref="U1" pin="1"/>
+      <node ref="TP2" pin="1"/>
+      <node ref="U1" pin="16"/>
+      <node ref="U6" pin="1"/>
+      <node ref="U1" pin="8"/>
+      <node ref="U1" pin="9"/>
+      <node ref="A1" pin="27"/>
+      <node ref="J2" pin="4"/>
+    </net>
+    <net code="28" name="GPIO-0">
+      <node ref="A1" pin="2"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="29" name="Net-(U3-Pad6)">
+      <node ref="U3" pin="6"/>
+    </net>
+    <net code="30" name="Net-(R1-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="31" name="+3V3">
+      <node ref="A1" pin="17"/>
+      <node ref="J2" pin="14"/>
+    </net>
+    <net code="32" name="Net-(M2-Pad1)">
+      <node ref="U1" pin="14"/>
+      <node ref="M2" pin="1"/>
+    </net>
+    <net code="33" name="Net-(M1-Pad2)">
+      <node ref="M1" pin="2"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="34" name="Net-(M1-Pad1)">
+      <node ref="M1" pin="1"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="35" name="Trigger">
+      <node ref="U6" pin="8"/>
+      <node ref="U5" pin="1"/>
+    </net>
+    <net code="36" name="Net-(D2-Pad2)">
+      <node ref="U5" pin="13"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="37" name="Net-(M2-Pad2)">
+      <node ref="M2" pin="2"/>
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="38" name="Net-(U5-Pad6)">
+      <node ref="U5" pin="6"/>
+    </net>
+    <net code="39" name="Net-(U5-Pad7)">
+      <node ref="U5" pin="7"/>
+    </net>
+    <net code="40" name="Net-(U5-Pad12)">
+      <node ref="U5" pin="12"/>
+    </net>
+    <net code="41" name="Net-(U5-Pad5)">
+      <node ref="U5" pin="5"/>
+    </net>
+    <net code="42" name="Net-(U5-Pad4)">
+      <node ref="U5" pin="4"/>
+    </net>
+    <net code="43" name="Net-(C1-Pad2)">
+      <node ref="C1" pin="2"/>
+      <node ref="U5" pin="14"/>
+    </net>
+    <net code="44" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+      <node ref="U5" pin="15"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="45" name="Net-(U2-Pad1)">
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="46" name="Net-(SW1-Pad2)">
+      <node ref="U2" pin="3"/>
+      <node ref="SW1" pin="2"/>
+    </net>
+    <net code="47" name="Net-(U6-Pad6)">
+      <node ref="U6" pin="6"/>
+    </net>
+    <net code="48" name="Net-(SW1-Pad6)">
+      <node ref="U4" pin="2"/>
+      <node ref="SW1" pin="6"/>
+    </net>
+    <net code="49" name="Net-(U6-Pad5)">
+      <node ref="U6" pin="5"/>
+    </net>
+    <net code="50" name="Net-(SW1-Pad4)">
+      <node ref="SW1" pin="4"/>
+    </net>
+    <net code="51" name="Net-(SW1-Pad1)">
+      <node ref="SW1" pin="1"/>
+    </net>
+    <net code="52" name="+BATT">
+      <node ref="TP1" pin="1"/>
+      <node ref="BT1" pin="1"/>
+      <node ref="U2" pin="4"/>
+      <node ref="SW1" pin="5"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="53" name="Net-(D1-Pad2)">
+      <node ref="R4" pin="2"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="54" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="U4" pin="1"/>
+    </net>
+    <net code="55" name="Net-(U6-Pad7)">
+      <node ref="U6" pin="7"/>
+    </net>
+  </nets>
+</export>

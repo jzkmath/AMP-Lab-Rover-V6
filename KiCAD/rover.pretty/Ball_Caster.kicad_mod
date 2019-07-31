@@ -1,0 +1,14 @@
+(module Ball_Caster (layer F.Cu) (tedit 5D2E6AC9)
+  (fp_text reference REF** (at -1.6 3.4) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value Mounting_Holes_Castor (at -6.35 -44.45) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_line (start 0 -40.64) (end 0 0) (layer Dwgs.User) (width 0.15))
+  (fp_line (start -2.54 -20) (end 2.54 -20) (layer Dwgs.User) (width 0.15))
+  (fp_circle (center 0 0) (end 2.5 0) (layer F.SilkS) (width 0.2))
+  (fp_circle (center 0 -40) (end 2.5 -40) (layer F.SilkS) (width 0.2))
+  (pad "" thru_hole circle (at 0 -40) (size 4.7 4.7) (drill 4.2) (layers *.Cu *.Mask))
+  (pad "" thru_hole circle (at 0 0) (size 4.7 4.7) (drill 4.2) (layers *.Cu *.Mask))
+)

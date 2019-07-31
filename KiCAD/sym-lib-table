@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name rover)(type Legacy)(uri ${KIPRJMOD}/rover.lib)(options "")(descr ""))
+  (lib (name workshop)(type Legacy)(uri "/home/jzkmath/Documents/KiCAD/Rover Workshop V5/Rover Workshop/workshop.lib")(options "")(descr ""))
+  (lib (name 96boards)(type Legacy)(uri "/home/jzkmath/Documents/KiCAD/Rover Workshop V5/Rover Workshop/96boards.lib")(options "")(descr ""))
+  (lib (name rover_workshop-rescue)(type Legacy)(uri "/home/jzkmath/Documents/KiCAD/Rover Workshop V5/Rover Workshop/rover_workshop-rescue.lib")(options "")(descr ""))
+)

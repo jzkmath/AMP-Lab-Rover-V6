@@ -1,0 +1,19 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MT3608
+D Boost Converter Module
+$ENDCMP
+#
+$CMP S-80836CNY-B2-U
+D Voltage Detector
+$ENDCMP
+#
+$CMP S7V8F3
+D 3.3v buck boost (Pololu PN#2122)
+$ENDCMP
+#
+$CMP VX7803-500
+D 500 mA Output Current, 4.75~36 Vdc Input, 3 Pin SIP, Non-Isolated, Dc-Dc Converter
+$ENDCMP
+#
+#End Doc Library
