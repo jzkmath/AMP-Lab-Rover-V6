@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.3-ffb9f22~84~ubuntu19.04.1)
+(kicad_pcb (version 20171130) (host pcbnew 5.1.4-e60b266~84~ubuntu19.04.1)
 
   (general
     (thickness 1.6)
@@ -1011,7 +1011,7 @@
   )
 
   (module rover:LOGO2 (layer F.Cu) (tedit 0) (tstamp 5D367761)
-    (at 89.408 78.613)
+    (at 89.408 80.772)
     (path /5D64E991)
     (fp_text reference G7 (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
@@ -2536,13 +2536,13 @@
   (gr_text + (at 109.855 118.618) (layer F.SilkS)
     (effects (font (size 5 5) (thickness 0.85)))
   )
-  (gr_text "Designed By:\nWilliam E. Gerhard III\nwillig42@vt.edu\nJonathan Z. Kayne\njzkmath@vt.edu" (at 88.392 85.344) (layer F.SilkS)
+  (gr_text "Designed By:\nWilliam E. Gerhard III\nwillig42@vt.edu\nJonathan Z. Kayne\njzkmath@vt.edu" (at 88.9 100.584) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "Bumper Car V6\nDesigned: July 31st, 2019\nS/N: HW-LCR03-V6.1A" (at 89.154 73.152) (layer F.SilkS)
+  (gr_text "Bumper Car V6\nDesigned: July 31st, 2019\nS/N: HW-LCR03-V6.1A" (at 89.154 74.676) (layer F.SilkS)
     (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
-  (gr_text ECE@VT (at 89.789 67.564) (layer F.SilkS)
+  (gr_text ECE@VT (at 89.916 69.088) (layer F.SilkS)
     (effects (font (size 5 3) (thickness 0.55)))
   )
   (gr_text "BUMPER CAR!" (at 154.432 86.995) (layer F.SilkS)

@@ -10,8 +10,10 @@
   This requires the use of an App called Blynk (by Sparkfun)
   which is available on iOS and Android.
 
-  Make sure to edit the values in "config.h" so that the
+  Make sure to edit the auth token below so that the
   rover is unique!
+
+  Also, use the setup sketch to configure your device!
    
   Download latest Blynk library here:
     https://github.com/blynkkk/blynk-library/releases/latest
@@ -40,8 +42,19 @@
  *************************************************************/
  
 #include <BlynkSimpleSerialBLE.h>
-#include "config.h"
 #include <Wire.h>
+
+// ***************************************************
+// You should get Auth Token in the Blynk App.
+// Go to the Project Settings (nut icon).
+char auth[] = "YourAuthToken";
+
+// Max speed for the rover.
+// any value between 0 and 255 is acceptable.
+// only adjust if you want to make the rover slower!
+#define MAX_SPEED 255
+
+// ***************************************************
 
 // Arduino Motor Pins
 #define R_MOT_F 5
@@ -60,29 +73,12 @@ void setup()
   
   // set up serial and change device name
   Serial.begin(9600);
-  Serial.print("AT+NAME=");
-  Serial.println(DEV_NAME);
   delay(1000);
   initAccelerometer();
-  
-  // indicate that bluetooth has been set up with 3 flashes.
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(500);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(500);
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(500);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(500);
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(500);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(500);
+  delay(1000);
 
   // start up Blynk
   Blynk.begin(Serial, auth);
-  // indicate that we are ready
-  digitalWrite(LED_BUILTIN, HIGH);
 }
 
 void loop()
@@ -176,63 +172,63 @@ BLYNK_WRITE(V1)
     digitalWrite(L_MOT_F, LOW);
     digitalWrite(L_MOT_R, LOW);
   }
-  else if ((Rg < -250) && (Lg < -250)) // *** FULL SOUTH ***
+  else if ((Rg < -250) && (Lg < -250)) // *** FULL SOUTH *** 
   {
     digitalWrite(R_MOT_F, HIGH);
     digitalWrite(R_MOT_R, LOW);
     digitalWrite(L_MOT_F, HIGH);
     digitalWrite(L_MOT_R, LOW);
   }
-  else if ((Rg < -250) && (Lg < 0)) // *** SOUTHWEST ***
+  else if ((Rg < -250) && (Lg < 0)) // *** SOUTHWEST *** 
   {
     digitalWrite(R_MOT_F, HIGH);
     digitalWrite(R_MOT_R, LOW);
     analogWrite(L_MOT_F, abs(Lg));
     digitalWrite(L_MOT_R, LOW);
   }
-  else if ((Rg < 0) && (Lg < -250)) // *** SOUTHEAST ***
+  else if ((Rg < 0) && (Lg < -250)) // *** SOUTHEAST *** 
   {
     analogWrite(R_MOT_F, abs(Rg));
     digitalWrite(R_MOT_R, LOW);
     digitalWrite(L_MOT_F, HIGH);
     digitalWrite(L_MOT_R, LOW);
   }
-  else if ((Rg < 0) && (Lg < 0)) // *** SOUTH ***
+  else if ((Rg < 0) && (Lg < 0)) // *** SOUTH *** 
   {
     analogWrite(R_MOT_F, abs(Rg));
     digitalWrite(R_MOT_R, LOW);
     analogWrite(L_MOT_F, abs(Lg));
     digitalWrite(L_MOT_R, LOW);
   }
-  else if ((Rg > 250) && (Lg < 0)) // *** FULL WEST ***
+  else if ((Rg > 250) && (Lg < 0)) // *** FULL EAST *** 
   {
-    digitalWrite(R_MOT_F, LOW);
-    digitalWrite(R_MOT_R, HIGH);
-    analogWrite(L_MOT_F, abs(Lg));
-    digitalWrite(L_MOT_R, LOW);
-  }
-  else if ((Rg > 0) && (Lg < 0)) // *** WEST ***
-  {
-    digitalWrite(R_MOT_F, LOW);
-    analogWrite(R_MOT_R, Rg);
-    analogWrite(L_MOT_F, abs(Lg));
-    digitalWrite(L_MOT_R, LOW);
-  }
-  else if ((Rg < 0) && (Lg > 250)) // *** FULL EAST ***
-  {
-    analogWrite(R_MOT_F, abs(Rg));
     digitalWrite(R_MOT_R, LOW);
+    digitalWrite(R_MOT_F, HIGH);
+    analogWrite(L_MOT_R, abs(Lg));
     digitalWrite(L_MOT_F, LOW);
-    digitalWrite(L_MOT_R, HIGH);
   }
-  else if ((Rg < 0) && (Lg > 0)) // *** EAST ***
+  else if ((Rg > 0) && (Lg < 0)) // *** EAST *** 
   {
-    analogWrite(R_MOT_F, abs(Rg));
     digitalWrite(R_MOT_R, LOW);
+    analogWrite(R_MOT_F, Rg);
+    analogWrite(L_MOT_R, abs(Lg));
     digitalWrite(L_MOT_F, LOW);
-    analogWrite(L_MOT_R, Lg);
   }
-  else if ((Rg > 250) && (Lg > 250)) // *** FULL NORTH ***
+  else if ((Rg < 0) && (Lg > 250)) // *** FULL WEST *** 
+  {
+    analogWrite(R_MOT_R, abs(Rg));
+    digitalWrite(R_MOT_F, LOW);
+    digitalWrite(L_MOT_R, LOW);
+    digitalWrite(L_MOT_F, HIGH);
+  }
+  else if ((Rg < 0) && (Lg > 0)) // *** WEST *** 
+  {
+    analogWrite(R_MOT_R, abs(Rg));
+    digitalWrite(R_MOT_F, LOW);
+    digitalWrite(L_MOT_R, LOW);
+    analogWrite(L_MOT_F, Lg);
+  }
+  else if ((Rg > 250) && (Lg > 250)) // *** FULL NORTH *** 
   {
     digitalWrite(R_MOT_F, HIGH);
     digitalWrite(R_MOT_R, LOW);
@@ -242,9 +238,9 @@ BLYNK_WRITE(V1)
   else // *** NORTH ***
   {
     digitalWrite(R_MOT_F, LOW);
-    analogWrite(R_MOT_R, Rg);
+    analogWrite(R_MOT_R, Lg);
     digitalWrite(L_MOT_F, LOW);
-    analogWrite(L_MOT_R, Lg);
+    analogWrite(L_MOT_R, Rg);
   }
   
 }
