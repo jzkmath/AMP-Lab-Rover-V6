@@ -9,6 +9,6 @@ You will need to download the Blynk library to get the sketch to compile.
 
 ## Assembly Instructions
 
-Video Tutorial: TBA
+Video Tutorial: https://www.youtube.com/playlist?list=PL4FFrmT3l_b0y4ERLvnKdsL8f40yGXgXS
 
 Written Manual: TBA
